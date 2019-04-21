@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://snap.berkeley.edu/snapsource/snap.html -->
+<html>
+<!-- Mirrored from snapextensions.uni-goettingen.de/oldsqlsnap.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2019 21:46:13 GMT -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>SQLsnap: snap! with some extensions</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/gif">
+		<script type="text/javascript" src="oldSQLsnap_files/morphic.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/widgets.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/blocks.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/threads.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/objects.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/gui.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/paint.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/lists.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/byob.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/xml.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/store.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/locale.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/cloud.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/sha512.js"></script>
+		<script type="text/javascript" src="oldSQLsnap_files/myextensions.js"></script>
+		<script type="text/javascript">
+			var world;
+			window.onload = function () {
+				world = new WorldMorph(document.getElementById('world'));
+				new IDE_Morph().openIn(world);
+				setInterval(loop, 1);
+			};
+			function loop() {
+				world.doOneCycle();
+			}
+		</script>
+	</head>
+	<body style="margin: 0;">
+		<canvas id="world" tabindex="1" style="position: absolute;" width="1920" height="935">
+    
+
+</canvas></body>
+<!-- Mirrored from snapextensions.uni-goettingen.de/oldsqlsnap.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2019 21:46:39 GMT -->
+</html>
